@@ -1,0 +1,68 @@
+.Card {
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(217, 19%, 24%);
+  border-radius: 8px;
+  padding: 50px 20px;
+  max-width: 400px;
+}
+.Desktop {
+  display: none;
+}
+.Dice {
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.Dice:hover {
+  box-shadow: 1px 1px 15px hsl(150, 100%, 66%);
+  transform: scale(1.1);
+}
+
+.Dice:active {
+  box-shadow: 2px 2px 50px hsl(150, 100%, 66%);
+  transform: scale(0.9);
+}
+.Dice__Icon {
+  border-radius: 5%;
+}
+
+.Advice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Advice__Title {
+  color: hsl(150, 100%, 66%);
+  font-weight: 300;
+}
+
+.Advice__Body {
+  color: hsl(193, 38%, 86%);
+  font-size: 18px;
+  width: 80%;
+}
+
+@media (min-width: 1440px) {
+  .Card {
+    padding: 50px;
+  }
+  .Mobile {
+    display: none;
+  }
+  .Desktop {
+    display: block;
+  }
+}
